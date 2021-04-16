@@ -38,6 +38,7 @@ public class CoronaVirusDataService {
 
         /**
          * error with CSVFormat
+         * seems to be an issue fro import
          * */
         Iterable<CSVRecord> records = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(csvBodyReader);
 
