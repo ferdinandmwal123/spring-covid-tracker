@@ -1,8 +1,8 @@
 package com.mwalagho.ferdinand.covidtracker.services;
 
 import com.mwalagho.ferdinand.covidtracker.models.LocationStats;
-import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVRecord;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
