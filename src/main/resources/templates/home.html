@@ -19,10 +19,10 @@ table>
     <th>Country</th>
     <th>Total Cases Reported</th>
 </tr>
-<tr th:each="prod : ${prods}">
-    <td th:text="${prod.name}">Onions</td>
-    <td th:text="${prod.price}">2.41</td>
-    <td th:text="${prod.inStock}? #{true} : #{false}">yes</td>
+<tr th:each="locationStat : ${locationStats}">
+    <td th:text="${locationStat.state}"></td>
+    <td th:text="${locationStat.country}"></td>
+    <td th:text="${locationStat.latestTotalCases}">0</td>
 </tr>
 </table>
 
