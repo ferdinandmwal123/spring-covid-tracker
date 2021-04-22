@@ -4,6 +4,7 @@ public class LocationStats {
 
     private String state,country;
     private int latestTotalCases;
+    private int diffFromPrevDay;
 
     public String getState() {
         return state;
