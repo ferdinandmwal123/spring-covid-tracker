@@ -23,6 +23,7 @@ public class HomeController {
         int totalNewCases = allStats.stream().mapToInt(stat -> stat.getDiffFromPrevDay()).sum();
         model.addAttribute("locationStats",allStats );
         model.addAttribute("totalReportedCases",totalReportedCases );
+        model.addAttribute("totalNewCases",totalNewCases );
 
         return "home";
     }
